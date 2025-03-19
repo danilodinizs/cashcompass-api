@@ -2,6 +2,7 @@ package dev.danilodinizs.cashcompass_api.infrastructure.presentation;
 
 import dev.danilodinizs.cashcompass_api.core.enums.TipoTransacao;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -20,23 +21,23 @@ public class TransacaoEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @NonNull
+    @NotNull
     private String descricao;
 
     private String categoria;
 
-    @NonNull
+    @NotNull
     private LocalDateTime data;
 
-    @NonNull
+    @NotNull
     private BigDecimal valor;
 
-    @NonNull
+    @NotNull
     @Enumerated(EnumType.STRING)
     private TipoTransacao tipoTransacao;
 
     private String parcela;
 
-    @NonNull
+    @NotNull
     private String nomeDevedor;
 }
