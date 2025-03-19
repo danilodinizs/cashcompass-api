@@ -39,10 +39,8 @@ src
 ├── main
 │   ├── java
 │   │   └── com.example.eventmanagement
-│   │       ├── application  # Application logic
-│   │       ├── domain       # Core business rules
-│   │       ├── infrastructure # External integrations and database
-│   │       └── presentation  # Controllers and REST endpoints
+│   │       ├── core           # Core business rules
+│   │       └── infrastructure # External integrations and database
 │   └── resources
 │       ├── db/migration     # Flyway migrations
 │       └── application.yml  # Application configuration
