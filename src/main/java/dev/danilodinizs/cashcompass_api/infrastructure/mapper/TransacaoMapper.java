@@ -59,4 +59,17 @@ public class TransacaoMapper {
                 transacaoEntity.getNomeDevedor()
         );
     }
+
+    public TransacaoEntity dtoToEntity(TransacaoRequestDTO transacaoRequestDTO) {
+        return new TransacaoEntity(
+                transacaoRequestDTO.id(),
+                transacaoRequestDTO.descricao(),
+                transacaoRequestDTO.categoria(),
+                transacaoRequestDTO.data(),
+                transacaoRequestDTO.valor(),
+                transacaoRequestDTO.tipoTransacao(),
+                transacaoRequestDTO.parcela(),
+                transacaoRequestDTO.nomeDevedor()
+        );
+    }
 }
