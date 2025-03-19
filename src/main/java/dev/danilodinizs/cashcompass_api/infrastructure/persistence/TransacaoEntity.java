@@ -1,4 +1,4 @@
-package dev.danilodinizs.cashcompass_api.infrastructure.presentation;
+package dev.danilodinizs.cashcompass_api.infrastructure.persistence;
 
 import dev.danilodinizs.cashcompass_api.core.enums.TipoTransacao;
 import jakarta.persistence.*;
