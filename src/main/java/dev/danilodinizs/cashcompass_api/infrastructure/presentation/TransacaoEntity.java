@@ -33,7 +33,6 @@ public class TransacaoEntity {
     private BigDecimal valor;
 
     @NotNull
-    @Enumerated(EnumType.STRING)
     private TipoTransacao tipoTransacao;
 
     private String parcela;
