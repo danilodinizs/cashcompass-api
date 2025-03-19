@@ -1,5 +1,7 @@
 package dev.danilodinizs.cashcompass_api.core.entities;
 
+import dev.danilodinizs.cashcompass_api.core.enums.TipoTransacao;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
